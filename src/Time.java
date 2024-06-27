@@ -19,6 +19,7 @@ public class Time implements ITime {
     this.timeRemaining = 0;
     this.isRunning = false;
   }
+
   /**
    * @param duration
    */
@@ -47,7 +48,7 @@ public class Time implements ITime {
   }
 
   /**
-   *
+   * Pauses the timer at its current time.
    */
   @Override
   public void pauseTimer() {
