@@ -4,7 +4,7 @@
 public interface ITime {
   /**
    *
-   * @param duration
+   * @param duration the length the user wants the time to begin at
    */
   void startTimer(int duration);
 
@@ -20,13 +20,13 @@ public interface ITime {
 
   /**
    *
-   * @return
+   * @return an integer representing the amount of time that remains
    */
   int getTimeRemaining();
 
   /**
    *
-   * @return
+   * @return a boolean indicating if the timer is still running
    */
   boolean isTimerOn();
 }
