@@ -1,5 +1,5 @@
 /**
- *
+ * This interface holds the methods for them Time class.
  */
 public interface ITime {
   /**

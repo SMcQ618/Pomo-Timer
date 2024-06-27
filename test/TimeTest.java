@@ -10,7 +10,6 @@ import static org.junit.Assert.assertNotEquals;
 public class TimeTest {
 
   private Time timer;
-//  private TimerFrame timerFrame;
 
   @Before
   public void setup() {
