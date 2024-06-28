@@ -1,7 +1,7 @@
 /**
  *
  */
-public interface NotificationService {
+public interface INotification {
   /**
    *
    * @param message Represents the message that the user will see when the timer is finished
