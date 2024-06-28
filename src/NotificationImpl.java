@@ -2,16 +2,30 @@ import java.awt.*;
 import java.awt.TrayIcon.MessageType;
 
 /**
- *
+ * This class represents the notification the user's computer will receive if they have minimized
+ * the timer.
  */
-public class NotificationServiceImpl implements NotificationService {
+public class NotificationImpl implements INotification {
+  private INotification notifS;
 
+  /**
+   * Constructor that initiliazes the notification.
+   */
+  public NotificationImpl() {
+    this.notifS = this;
+  }
+
+  public NotificationImpl(INotification notifS) {
+    this.notifS = notifS;
+  }
 
   /**
    * @param message Represents the message that the user will see when the timer is finished
    */
   @Override
   public void showNotification(String message) {
+    this.notifS.showNotification(message);
+
     // this means if
     if (SystemTray.isSupported()) {
       SystemTray tray = SystemTray.getSystemTray();
